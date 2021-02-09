@@ -1,0 +1,80 @@
+@charset "EUC-KR";
+
+table {
+	width: 63%;
+	border-collapse: collapse;
+	border-top: 2px solid #6a6a6a;
+	border-bottom: 2px solid #6a6a6a;
+	text-align: left;
+	line-height: 1.5;
+	margin-top: 100px;
+}
+
+th {
+	width: 180px;
+	height: 50px;
+	vertical-align: top;
+	border-bottom: 1px solid #868686;
+	background: #dfe1e6;
+	text-align: center;
+	font-size: 17px;
+	padding-top: 25px;
+}
+
+td {
+	width: 500px;
+	vertical-align: center;
+	padding-left: 25px;
+	border-bottom: 1px solid #868686;
+}
+
+input[type=text], input[type=password] {
+	width: 600px;
+	height: 35px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	font-size: 16px;
+}
+
+#writebtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px; 
+	position: absolute;
+	margin-top: 30px;
+	left: 72%;
+}
+
+#writebtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#cancelbtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px; 
+	position: absolute;
+	margin-top: 30px;
+	left: 65.8%;
+}
+
+#cancelbtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}

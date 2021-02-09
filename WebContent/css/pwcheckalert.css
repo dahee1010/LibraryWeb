@@ -1,0 +1,39 @@
+@charset "EUC-KR";
+
+#alert {
+	margin: 20px;
+	padding-top: 25px;
+}
+
+table {
+	width: 370px;
+	height: 80px;
+	margin: 0px auto;
+	margin-left: 60px;
+	border-collapse: collapse;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+}
+
+td, th {
+	text-align: left;
+}
+
+th {
+	padding-left: 10px;
+}
+
+input[type=submit] {
+	width: 60px;
+	height: 30px;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	position: absolute;
+	left: 79%;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius:10px;
+	background-color: #848484;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	font-size: 14px;
+}

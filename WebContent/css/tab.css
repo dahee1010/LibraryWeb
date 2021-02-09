@@ -1,0 +1,68 @@
+@charset "EUC-KR";
+
+.container {
+	width: 1200px;
+	height: 500px;
+	float: left;
+	margin: 30px;
+	margin-left: 18%;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Medium';
+	color: #4d4d4d;
+}
+
+ul.tabs {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.tabs li:hover {
+	color: #58baeb;
+	font-weight: bold
+}
+
+ul.tabs li {
+	display: inline-block;
+	padding: 15px 162px; /* ÅÇ ¸ð¾ç */
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 2px solid #58baeb;
+	margin: -2.7px;
+	color: #a6a6a6;
+}
+
+ul.tabs li.current {
+	color: #58baeb;
+	border: 2px solid #58baeb;
+	border-bottom: 0px solid #ffffff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.tab-content {
+	display: none;
+	background: #ffffff;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+.container table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	margin-top: 70px;
+	table-layout: fixed;
+	text-align: center;
+}
+
+.container table img {
+	margin-bottom: 20px;
+}
+
+.container table span {
+	color: #58baeb;
+	font-size: 15px;
+}

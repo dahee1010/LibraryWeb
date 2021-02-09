@@ -1,0 +1,175 @@
+@charset "EUC-KR";
+
+table {
+	width: 60%;
+	border-collapse: collapse;
+	border-top: 2px solid #6a6a6a;
+	border-bottom: 2px solid #6a6a6a;
+	text-align: left;
+	line-height: 1.5;
+	margin-top: 100px;
+}
+
+th {
+	width: 150px;
+	padding: 10px;
+	vertical-align: top;
+	border-bottom: 1px solid #868686;
+	background: #dfe1e6;
+	text-align: center;
+	padding: 20px 30px;
+	font-size: 17px;
+}
+
+td {
+	width: 350px;
+	padding: 20px;
+	vertical-align: top;
+	border-bottom: 1px solid #868686;
+	font-size: 17px;
+}
+
+#title {
+	text-align: left;
+	font-size: 20px;
+}
+
+#content {
+	border-top: 1px solid #6a6a6a;
+	padding: 40px;
+	font-size: 18px;
+}
+
+#deletebtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 30px;
+	left: 60.56%;
+}
+
+#deletebtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#deletebtn1 {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 15px;
+	left: 66.8%;
+}
+
+#deletebtn1:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#modifybtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 30px;
+	left: 66.8%;
+}
+
+#modifybtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#modifybtn1 {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 15px;
+	left: 73%;
+}
+
+#modifybtn1:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#cancelbtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 30px;
+	left: 73%;
+}
+
+#cancelbtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+#replybtn {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 30px;
+	left: 21%;
+}
+
+#replybtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+span {
+	position: relative;
+	top: 20%;
+	left: 78%;
+	font-weight: normal;
+	font-size: 17px;
+}

@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+
+.detailmenu {
+	width: 100%;
+	height: 60px;
+	text-align: left;
+	background-color: #46465a;
+	padding-top: 20px;
+}
+
+.detailmenu a {
+	font-size: 35px;
+	font-family: '배달의민족 주아';
+	color: #ffffff;
+	position: inline-block;
+	margin-top: 10px;;
+	padding-left: 18%;
+
+}

@@ -1,0 +1,167 @@
+@charset "EUC-KR";
+
+.box1 {
+	background-color: #f0f0f0;
+	width: 1200px;
+	height: 450px;
+	margin: 0px auto;
+	padding-top: 6%;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+	margin-top: 80px;
+}
+
+.box1 table {
+	width: 1000px;
+	height: 350px;
+	margin: 0px auto;
+	margin-left: 10%;
+}
+
+.box1 th {
+	text-align: left;
+	vertical-align: top;
+	font-size: 25px;
+	padding-left: 25px;
+	padding-right: 50px;
+}
+
+.box1 td {
+	font-size: 18px;
+	vertical-align: top;
+	padding-left: 25px;
+}
+
+img {
+	margin: 0px auto;
+}
+
+.box1 input[type=submit] {
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+	font-size: 16px;
+	margin-top: -10%;
+	margin-left: 80%;
+	width: 90px;
+	height: 45px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #848484;
+	color: #fff;
+	border: 0;
+	outline: 0;
+}
+
+.box1 input[type=submit]:hover {
+	background: #787A7C;
+}
+
+.box2 span {
+	font-size: 25px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.box2 a{
+	color: #d20000;
+}
+
+.box2 {
+	background-color: #ffffff;
+	width: 60%;
+	height: 240px;
+	margin: 0px auto;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+	margin-top: 50px;
+}
+
+.box2 table {
+	width: 900px;
+	margin-top: 50px;
+}
+
+.box2 th {
+	width: 50px;
+	font-size: 17px;
+	text-align: left;
+	padding: 20px;
+}
+
+.box2 td {
+	font-size: 18px;
+}
+
+.box2 textarea {
+	width: 850px;
+	height: 50px;
+	resize: none;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+	margin-left: 15px;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+}
+
+.box2 #writebtn {
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: KoPubWorldµ¸¿òÃ¼ Medium;
+	position: relative;
+	left: 92%;
+	margin-bottom: 15px;
+}
+
+.box2 #writebtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+.box3 {
+	background-color: #ffffff;
+	width: 60%;
+	height: 650px;
+	margin: 0px auto;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+	margin-top: 80px;
+}
+
+.box3 table {
+	width: 900px;
+	border-collapse: collapse;
+}
+
+.box3 td {
+	font-size: 14px;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #b9b9b9;
+}
+
+.box3 #content {
+		width: 600px;
+	padding-left: 20px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.box3 #deletebtn {
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: KoPubWorldµ¸¿òÃ¼ Medium;
+}
+
+.box3 #deletebtn:hover {
+	background-color: #848484;
+	color: #ffffff;
+}

@@ -1,0 +1,76 @@
+@charset "EUC-KR";
+
+.tab1 {
+	width: 63%;
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+	text-align: center;
+	margin-top: 80px;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+}
+
+.tab1 th {
+	background-color: #787A7C;
+	color: #ffffff;
+	padding: 10px;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.tab1 td, .tab1 td a {
+	border-bottom: 1px solid #444444;
+	color: #262626;
+	padding: 17px;
+}
+
+.tab1 tr:hover {
+	background-color: #F0F0F0;
+	cursor: default;
+}
+
+input[type=button] {
+	width: 115px;
+	height: 42px;
+	cursor: pointer;
+	border-radius: 35px;
+	background-color: #ffffff;
+	color: #646464;
+	border: 1px solid #b9b9b9;
+	outline: 0;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	font-size: 16px;
+	position: absolute;
+	margin: 20px;
+	left: 74.5%;
+}
+
+input[type=button]:hover {
+	background-color: #848484;
+	color: #ffffff;
+}
+
+.tab2 {
+	margin-top: 80px;
+	margin-bottom: 100px;
+	font-family: 'KoPubWorldµ¸¿òÃ¼ Light';
+	text-decoration: none;
+}
+
+.tab2 a {
+	font-size: 17px;
+	margin: 10px;
+	color: #717171;
+}
+
+.tab2 a:hover {
+	color: #2f2f2f;
+	font-weight: bold;
+}
+
+#lock {	
+	width: 14px;
+	height: 17px;
+	position: absolute;
+	padding-top: 2.3px;
+	left: 25.3%;
+}

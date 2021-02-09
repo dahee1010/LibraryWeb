@@ -1,0 +1,47 @@
+@charset "EUC-KR";
+
+h2 {
+	color: #383838;
+	padding-top: 50px;
+	font-family: 'KoPubWorld돋움체 Medium';
+}
+
+#admin { /* 전체모양 */
+	width: 70%;
+	height: 900px;
+	margin: 0px quto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#sidebar {
+	width: 17%;
+	height: 100%;
+	float: left;
+	border: 1px solid #bcbcbc;
+	text-align: center;
+}
+
+#sidebar li { /* 사이드메뉴 */
+	padding-top: 20px;
+}
+
+#sidebar li a {
+	font-size: 22px;
+	color: #575757;
+	font-weight: bold;
+	font-family: 'KoPubWorld돋움체 Medium';
+}
+
+#sidebar li a:hover {
+	color: #58baeb;
+	font-weight: bold;
+}
+
+#content { /* 본문내용 */
+	width: 82.5%;
+	height: 100%;
+	float: right;
+	border: 1px solid #bcbcbc;
+	float: right;
+}

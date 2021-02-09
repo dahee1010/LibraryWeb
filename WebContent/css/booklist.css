@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+
+.tab1 {
+	table-layout: fixed;
+	border-spacing: 30px;
+}
+
+.tab1 td {
+	width: 900px;
+	border: 2px solid #808080;
+	padding: 3%;
+}
+
+.tab1 td:hover {
+	width: 900px;
+	border: 2px solid #808080;
+	padding: 3%;
+	background-color: #F0F0F0;
+	color: #000000;
+}
+
+.tab2 {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.tab2 a {
+	font-size: 17px;
+	margin: 10px;
+	color: #717171;
+}
+
+.tab2 a:hover {
+	color: #2f2f2f;
+	font-weight: bold;
+}
