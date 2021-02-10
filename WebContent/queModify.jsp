@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,7 @@
 
 	<form action="queModifyOk.do" method="post">
 		<input type="hidden" name="qNum" value="${view.qNum}">
+		<c:set var="content1" value="${view.content}"/>
 
 		<table>
 			<tr>
@@ -53,7 +55,7 @@
 			</tr>
 			<tr>
 				<th>³»¿ë</th>
-				<td><textarea cols="60" rows="10" name="content" required>${view.content}</textarea></td>
+				<td><textarea cols="60" rows="10" name="content" required>${fn:replace(content1, '<br>', "&#10;")}</textarea></td>
 			</tr>
 		</table>
 

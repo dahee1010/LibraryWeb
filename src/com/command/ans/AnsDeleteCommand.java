@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.command.Command;
 import com.dao.AnsDao;
+import com.dao.QueDao;
 
 public class AnsDeleteCommand implements  Command {
 
@@ -17,10 +18,12 @@ public class AnsDeleteCommand implements  Command {
 		int qNum = Integer.parseInt(request.getParameter("qNum"));
 		
 		AnsDao dao = new AnsDao();
-		
 		int ri = dao.ansDelete(qNum);
 		
 		request.setAttribute("ri", ri);
 		request.setAttribute("qNum", qNum);
+		
+		QueDao que = new QueDao();
+		que.downCnt(qNum);
 	}
 }

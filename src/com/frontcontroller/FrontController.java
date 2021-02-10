@@ -27,6 +27,7 @@ import com.command.book.BookRandomListCommand;
 import com.command.book.BookSearchCommand;
 import com.command.book.BookViewCommand;
 import com.command.brank.bRankViewCommand;
+import com.command.course.CourseViewCommand;
 import com.command.member.IdCheckCommand;
 import com.command.member.JoinCommand;
 import com.command.member.LoginCommand;
@@ -41,6 +42,7 @@ import com.command.mrank.mRankViewCommand;
 import com.command.mybook.MybookAddCommand;
 import com.command.mybook.MybookAllCommand;
 import com.command.mybook.MybookDeleteCommand;
+import com.command.mybook.MybookExtenCommand;
 import com.command.mybook.MybookListCommand;
 import com.command.que.QueDeleteCommand;
 import com.command.que.QueListCommand;
@@ -235,6 +237,11 @@ public class FrontController extends HttpServlet {
 			command = new MybookDeleteCommand();
 			command.execute(request, response);
 			viewPage = "mybookDeleteOk.jsp";
+			
+		} else if (com.equals("/mybookExten.do")) {
+			command = new MybookExtenCommand();
+			command.execute(request, response);
+			viewPage = "mybookExtenOk.jsp";
 
 		} else if (com.equals("/mybookAll.do")) {
 			command = new MybookAllCommand();
@@ -388,6 +395,17 @@ public class FrontController extends HttpServlet {
 			viewPage = "ansDeleteOk.jsp";
 			
 	
+			
+			
+		} else if (com.equals("/courseView.do")) {
+			command = new CourseViewCommand();
+			command.execute(request, response);
+			viewPage = "courseView.jsp";
+			
+		} else if (com.equals("/courseDetail.do")) {
+			command = new CourseViewCommand();
+			command.execute(request, response);
+			viewPage = "courseDetail.jsp";
 			
 			
 			// 메인 실행 시

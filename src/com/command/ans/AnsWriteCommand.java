@@ -21,6 +21,8 @@ public class AnsWriteCommand implements Command {
 		String content = request.getParameter("content");
 		Timestamp aDate = new Timestamp(System.currentTimeMillis());
 		
+		content = content.replace("\r\n","<br>");
+		
 		AnsDao dao = new AnsDao();
 		int ri = dao.ansWrite(qNum, qtitle, content, aDate);
 		

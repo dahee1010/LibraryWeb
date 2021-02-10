@@ -17,6 +17,8 @@ public class AnsModifyCommand implements Command {
 		int qNum = Integer.parseInt(request.getParameter("qNum"));
 		String content = request.getParameter("content");
 
+		content = content.replace("\r\n","<br>");
+		
 		AnsDao dao = new AnsDao();
 		int ri = dao.ansModify(qNum, content);
 

@@ -48,7 +48,7 @@ header {
 /* 두번째 메뉴 위치 */
 nav {
 	position: absolute;
-	left: 53%;
+	left: 50%;
 	top: 55px;
 }
 
@@ -70,7 +70,7 @@ nav li a:hover {
 
 main {
 	width: 100%;
-	min-height: 700px;
+	min-height: 900px;
 }
 
 img {

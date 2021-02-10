@@ -165,7 +165,7 @@ public class MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet set = null;
 
-		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, id, pw, name, birth, gender, eMail, rDate FROM b_member order by rdate desc) b_member where rnum <= ?) where rnum >= ?";
+		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, id, pw, name, birth, gender, eMail, rDate FROM (select * from b_member order by rDate desc) b_member ) b_member where rnum <= ?) where rnum >= ?";
 
 		try {
 			connection = getConnection();

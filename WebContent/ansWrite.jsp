@@ -24,7 +24,7 @@
 
 	<table>
 		<tr>
-			<th colspan=6 id="title">${view.title}</th>
+			<th colspan=6 id="title">Q. ${view.title}</th>
 		</tr>
 
 		<tr>
@@ -51,7 +51,7 @@
 		</table>
 
 		<input type="submit" value="작성" id="writebtn"> <a
-			href="queList.do"><input type="button" value="취소" id="cancelbtn"></a>
+			href="queView.do?qNum=${view.qNum}"><input type="button" value="취소" id="cancelbtn"></a>
 	</form>
 
 	</main>

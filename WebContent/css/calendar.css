@@ -1,0 +1,57 @@
+@charset "EUC-KR";
+
+#course {
+	height: 1500px;
+	padding: 70px;
+}
+
+#info table {
+	width: 1600px;
+	text-align: center;
+	font-size: 23px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	table-layout: fixed;
+	color: #6e6e6e;
+}
+
+#info a:hover {
+	color: #58baeb;
+}
+
+#calendar {
+	width: 1100px;
+	border-collapse: collapse;
+	border: 2px solid #646464;
+	table-layout: fixed;
+	font: 15px KoPubWorldµ¸¿òÃ¼ Medium;
+	margin-bottom: 100px;
+}
+
+#calendar th {
+	border: 2px solid #646464;
+	height: 40px;
+	background-color: #f0f0f0;
+}
+
+#calendar td {
+	border: 2px solid #646464;
+}
+
+#day {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	margin: 0px;
+	font-size: 15px;
+}
+
+#conten {
+	height: 55px;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}

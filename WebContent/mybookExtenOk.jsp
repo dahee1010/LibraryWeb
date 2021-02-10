@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
@@ -10,17 +11,18 @@
 	<c:choose>
 		<c:when test="${ri eq '0'}">
 			<script>
-				alert('글 수정을 실패했습니다.');
+				alert('연장에 실패했습니다.');
 				history.back();
 			</script>
 		</c:when>
 
 		<c:when test="${ri eq '1'}">
 			<script>
-				alert('글 수정을 성공했습니다.');
-				location.href = 'queView.do?qNum=${qNum}'
+				alert('연장되었습니다');
+				location.href = document.referrer;
 			</script>
 		</c:when>
+		
 	</c:choose>
 </body>
 </html>

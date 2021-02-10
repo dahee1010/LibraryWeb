@@ -29,7 +29,7 @@
 				<th>공개여부</th>
 				<td>
 				&nbsp;
-				<input type="radio" name="open" value="true">
+				<input type="radio" name="open" value="true" checked>
 				<span>공개</span> &nbsp;
 				<input type="radio" name="open" value="false">
 				<span>비공개</span>

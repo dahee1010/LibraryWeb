@@ -289,13 +289,41 @@ public class QueDao {
 		}
 	}
 	
-	// 답변 카운트
+	// 답변 카운트 +1
 	public void upCnt(int qNum) {
 
 		Connection connection = null;
 		PreparedStatement pstmt = null;
 
 		String query = "update b_que set cnt=(cnt+1) where qNum = ?";
+		try {
+			connection = dataSource.getConnection();
+
+			pstmt = connection.prepareStatement(query);
+
+			pstmt.setInt(1, qNum);
+
+			pstmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				pstmt.close();
+				connection.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+	}
+	
+	//답변 카운트 -1
+	public void downCnt(int qNum) {
+
+		Connection connection = null;
+		PreparedStatement pstmt = null;
+
+		String query = "update b_que set cnt=(cnt-1) where qNum = ?";
 		try {
 			connection = dataSource.getConnection();
 

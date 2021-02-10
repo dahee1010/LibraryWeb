@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
@@ -39,19 +38,17 @@
 	</table>
 
 	<form action="ansModifyOk.do" method="post">
+		<c:set var="content1" value="${ans.content}" />
 
-
-		<input type="hidden" name="qNum" value="${view.qNum}"> <input
-			type="hidden" name="qtitle" value="${view.title}">
+		<input type="hidden" name="qNum" value="${view.qNum}"> <input type="hidden" name="qtitle" value="${view.title}">
 		<table style="margin-top: 50px">
 			<tr>
 				<th>답변내용</th>
-				<td><textarea cols="60" rows="10" name="content" required>${ans.content}</textarea></td>
+				<td><textarea cols="60" rows="10" name="content" required>${fn:replace(content1, '<br>', "&#10;")}</textarea></td>
 			</tr>
 		</table>
 
-		<input type="submit" value="작성" id="writebtn"> <a
-			href="queList.do"><input type="button" value="취소" id="cancelbtn"></a>
+		<input type="submit" value="작성" id="writebtn"> <a href="queView.do?qNum=${view.qNum}"><input type="button" value="취소" id="cancelbtn"></a>
 	</form>
 
 	</main>

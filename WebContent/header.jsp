@@ -34,6 +34,7 @@
 			<ul>
 				<li><a href="bookList.jsp">도서검색　</a></li>
 				<li><a href="wishbookForm.jsp">희망도서신청　</a></li>
+				<li><a href="courseView.do">문화강좌　</a></li>
 				<li><a href="boardList.do">공지사항　</a></li>
 				<li><a href="queList.do">Q&A　</a></li>
 			</ul>

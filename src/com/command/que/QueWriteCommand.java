@@ -21,6 +21,8 @@ public class QueWriteCommand implements Command {
 		Timestamp qDate = new Timestamp(System.currentTimeMillis());
 		String open = request.getParameter("open");
 
+		content = content.replace("\r\n","<br>");
+		
 		QueDao dao = new QueDao();
 		int ri = dao.queWrite(qId, title, content, qDate, open);
 

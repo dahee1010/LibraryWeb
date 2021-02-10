@@ -67,10 +67,10 @@
 	<form action="ansModify.do" method="post">
 		<input type="hidden" name="qNum" value="${view.qNum}">
 
-		<table style="margin-top: 50px">
+		<table style="margin-top: 100px">
 			<tr>
 				<th colspan=6 id="title">A. ${ans.qTitle}
-				<span>${fn:substring(ans.aDate, 0,16)}</span>
+				<span>${fn:substring(ans.aDate, 0,16)}</span></th>
 			</tr>
 			<tr>
 				<td colspan=6 id="content">${ans.content}</td>

@@ -2,16 +2,18 @@
 
 .tab1 {
 	table-layout: fixed;
-	border-spacing: 30px;
-}
-
-.tab1 td {
 	width: 900px;
-	border: 2px solid #808080;
+	height: 150px;
 	padding: 3%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
 }
 
-.tab1 td:hover {
+.tab1 tr {
+	border: 2px solid #808080;
+}
+
+.tab1 tr:hover {
 	width: 900px;
 	border: 2px solid #808080;
 	padding: 3%;
@@ -33,4 +35,8 @@
 .tab2 a:hover {
 	color: #2f2f2f;
 	font-weight: bold;
+}
+
+#bookimg {
+	width: 80px;
 }

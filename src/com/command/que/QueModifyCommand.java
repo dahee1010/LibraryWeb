@@ -19,9 +19,12 @@ public class QueModifyCommand implements Command {
 		String content = request.getParameter("content");
 		String open = request.getParameter("open");
 
+		content = content.replace("\r\n","<br>");
+		
 		QueDao dao = new QueDao();
 		int ri = dao.queModify(qNum, title, content, open);
 
+		request.setAttribute("qNum", qNum);
 		request.setAttribute("ri", ri);
 
 	}

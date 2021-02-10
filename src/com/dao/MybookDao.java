@@ -37,7 +37,7 @@ public class MybookDao {
 		Timestamp mbDate = new Timestamp(System.currentTimeMillis());
 		Timestamp mbRdate = new Timestamp(System.currentTimeMillis() + 604800000); // 일주일 후로 반납일 자동설정
 
-		String query = "insert into b_mybook (bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate) values (?, mybook_seq.nextval, ?, ?, ?, ?, ?)";
+		String query = "insert into b_mybook (bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate, exten) values (?, mybook_seq.nextval, ?, ?, ?, ?, ?, 0)";
 
 		try {
 			connection = dataSource.getConnection();
@@ -94,8 +94,9 @@ public class MybookDao {
 				String mbWriter = set.getString("mbWriter");
 				Timestamp mbDate = set.getTimestamp("mbDate");
 				Timestamp mbRdate = set.getTimestamp("mbRdate");
+				int exten = set.getInt("exten");
 
-				MybookDto dto = new MybookDto(bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate);
+				MybookDto dto = new MybookDto(bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate, exten);
 				dtos.add(dto);
 
 			}
@@ -144,6 +145,37 @@ public class MybookDao {
 		}
 		return ri;
 	}
+	
+	// 대출 연장
+	public int mybookExten(int mbNum) {
+
+		int ri = 0;
+
+		Connection connection = null;
+		PreparedStatement pstmt = null;
+
+		String query = "update b_mybook set mbRdate=(mbRdate+7), exten=1 where mbNum = ?";
+
+		try {
+			connection = dataSource.getConnection();
+
+			pstmt = connection.prepareStatement(query);
+			pstmt.setInt(1, mbNum);
+
+			ri = pstmt.executeUpdate();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				pstmt.close();
+				connection.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		return ri;
+	}
 
 	// 전체 대출 도서 조회
 	public ArrayList<MybookDto> mybookAll(int start, int end) {
@@ -154,7 +186,7 @@ public class MybookDao {
 		PreparedStatement pstmt = null;
 		ResultSet set = null;
 
-		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate FROM b_mybook order by mbNum) b_mybook where rnum <= ?) where rnum >= ?";
+		String query = "select * from (SELECT * FROM ( SELECT rownum rnum, bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate, exten FROM b_mybook order by mbNum) b_mybook where rnum <= ?) where rnum >= ?";
 
 		try {
 			connection = dataSource.getConnection();
@@ -174,8 +206,9 @@ public class MybookDao {
 				String mbWriter = set.getString("mbWriter");
 				Timestamp mbDate = set.getTimestamp("mbDate");
 				Timestamp mbRdate = set.getTimestamp("mbRdate");
+				int exten = set.getInt("exten");
 
-				MybookDto dto = new MybookDto(bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate);
+				MybookDto dto = new MybookDto(bNum, mbNum, mbId, mbName, mbWriter, mbDate, mbRdate, exten);
 				dtos.add(dto);
 			}
 

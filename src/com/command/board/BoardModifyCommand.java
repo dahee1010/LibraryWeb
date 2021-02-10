@@ -17,6 +17,8 @@ public class BoardModifyCommand implements Command {
 		int wNum = Integer.parseInt(request.getParameter("wNum"));
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
+		
+		content = content.replace("\r\n","<br>");
 
 		BoardDao dao = new BoardDao();
 		int ri = dao.boardModify(wNum, title, content);

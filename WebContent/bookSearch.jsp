@@ -40,19 +40,33 @@
 			<img src="css/null.png" alt="null.img" width="20%" />
 		</c:when>
 
+
+
 		<c:otherwise>
+		<c:forEach items="${search}" var="dto">
+		
+		<a href="bookView.do?bookNum=${dto.bookNum}">
+			
 			<table class="tab1">
-
-				<c:forEach items="${search}" var="dto">
-
 					<tr>
-						<td><a href="bookView.do?bookNum=${dto.bookNum}">${dto.bookName}<br> 저자 : ${dto.writer} | 출판사 : ${dto.publish} | 발행년도 : ${dto.year}
-						</a></td>
+					<td width="200px">
+						<c:choose>
+							<c:when test="${empty dto.bookimg}">
+								<img src="bookimg/booknull.jpg" id="bookimg">
+							</c:when>
+
+							<c:when test="${not empty dto.bookimg}">
+								<img src="${dto.bookimg}" id="bookimg">
+							</c:when>
+						</c:choose>
+					</td>
+					<td>${dto.bookName}
+					<br>저자 : ${dto.writer} | 출판사 : ${dto.publish} | 발행년도 : ${dto.year}</td>
 					</tr>
-
-				</c:forEach>
-
 			</table>
+			
+		</a>
+		</c:forEach>
 
 			<table class="tab2">
 				<tr>

@@ -22,6 +22,8 @@ public class ReviewWriteCommand implements Command {
 		String rContent = request.getParameter("rContent");
 		int rating = Integer.parseInt(request.getParameter("rating"));
 
+		rContent = rContent.replace("\r\n","<br>");
+		
 		ReviewDao dao = new ReviewDao();
 		int ri = dao.reviewWrite(bNum, rId, rContent, rating);
 

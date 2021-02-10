@@ -11,12 +11,13 @@ public class MybookDto {
 	String mbWriter;
 	Timestamp mbDate;
 	Timestamp mbRdate;
+	int exten;
 	
 	public MybookDto() {
 		
 	}
 	
-	public MybookDto(int bNum, int mbNum, String mbId, String mbName, String mbWriter, Timestamp mbDate, Timestamp mbRdate) {
+	public MybookDto(int bNum, int mbNum, String mbId, String mbName, String mbWriter, Timestamp mbDate, Timestamp mbRdate, int exten) {
 		this.bNum = bNum;
 		this.mbNum = mbNum;
 		this.mbId = mbId;
@@ -24,6 +25,7 @@ public class MybookDto {
 		this.mbWriter = mbWriter;
 		this.mbDate = mbDate;
 		this.mbRdate = mbRdate;
+		this.exten = exten;
 	}
 
 	public int getbNum() {
@@ -80,5 +82,13 @@ public class MybookDto {
 
 	public void setMbRdate(Timestamp mbRdate) {
 		this.mbRdate = mbRdate;
+	}
+
+	public int getExten() {
+		return exten;
+	}
+
+	public void setExten(int exten) {
+		this.exten = exten;
 	}
 }

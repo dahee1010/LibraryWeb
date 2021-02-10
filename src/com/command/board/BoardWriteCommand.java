@@ -19,6 +19,8 @@ public class BoardWriteCommand implements Command {
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
 		Timestamp wDate = new Timestamp(System.currentTimeMillis());
+		
+		content = content.replace("\r\n","<br>");
 
 		BoardDao dao = new BoardDao();
 		int ri = dao.boardWrite(wId, title, content, wDate);
