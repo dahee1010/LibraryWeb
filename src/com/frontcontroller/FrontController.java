@@ -396,7 +396,7 @@ public class FrontController extends HttpServlet {
 			
 	
 			
-			
+			// 달력 관련
 		} else if (com.equals("/courseView.do")) {
 			command = new CourseViewCommand();
 			command.execute(request, response);
